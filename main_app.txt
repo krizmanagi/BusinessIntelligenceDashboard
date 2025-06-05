@@ -1,0 +1,54 @@
+import React, { useState, useEffect } from 'react'
+import Dashboard from './components/Dashboard'
+import { salesData, regionData, productData } from './data/mockData'
+import './App.css'
+
+function App() {
+  const [dashboardData, setDashboardData] = useState({
+    sales: salesData,
+    regions: regionData,
+    products: productData,
+    lastUpdated: new Date()
+  })
+
+  const [loading, setLoading] = useState(false)
+
+  // Simulate data refresh functionality
+  const refreshData = async () => {
+    setLoading(true)
+    
+    // Simulate API call delay
+    await new Promise(resolve => setTimeout(resolve, 1000))
+    
+    // In a real app, you would fetch from your API here
+    // const newData = await fetchDashboardData()
+    
+    setDashboardData(prev => ({
+      ...prev,
+      lastUpdated: new Date()
+    }))
+    
+    setLoading(false)
+  }
+
+  // Auto-refresh every 5 minutes
+  useEffect(() => {
+    const interval = setInterval(() => {
+      refreshData()
+    }, 5 * 60 * 1000) // 5 minutes
+
+    return () => clearInterval(interval)
+  }, [])
+
+  return (
+    <div className="App min-h-screen bg-gray-50">
+      <Dashboard 
+        data={dashboardData}
+        onRefresh={refreshData}
+        loading={loading}
+      />
+    </div>
+  )
+}
+
+export default App

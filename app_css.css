@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS for dashboard components */
+.recharts-tooltip-wrapper {
+  @apply shadow-lg rounded-lg border border-gray-200;
+}
+
+.recharts-tooltip-content {
+  @apply bg-white p-3 rounded-lg shadow-lg border-0;
+}
+
+.recharts-tooltip-label {
+  @apply font-semibold text-gray-800 mb-1;
+}
+
+.recharts-tooltip-item {
+  @apply text-sm;
+}
+
+/* Custom scrollbar for better UX */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Animation for dashboard cards */
+.dashboard-card {
+  @apply transform transition-all duration-200 ease-in-out;
+}
+
+.dashboard-card:hover {
+  @apply scale-105 shadow-card-hover;
+}
+
+/* Loading animation */
+.loading-spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Responsive chart container */
+.chart-container {
+  @apply w-full overflow-hidden;
+}
+
+/* KPI trend indicators */
+.trend-up {
+  @apply text-green-600;
+}
+
+.trend-down {
+  @apply text-red-600;
+}
+
+.trend-neutral {
+  @apply text-gray-600;
+}
+
+/* Filter panel styling */
+.filter-panel {
+  @apply bg-white rounded-lg shadow-card p-4 mb-6;
+}
+
+.filter-select {
+  @apply border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200;
+}
+
+/* Chart legend styling */
+.recharts-legend-wrapper {
+  @apply mt-4;
+}
+
+.recharts-legend-item {
+  @apply font-medium text-sm;
+}
