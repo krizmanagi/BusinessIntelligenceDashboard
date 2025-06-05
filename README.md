@@ -59,7 +59,8 @@ Open your browser
 Navigate to http://localhost:5173
 
 ### 🏗 Project Structure
-```business-dashboard/
+```
+business-dashboard/
 ├── public/
 │   └── vite.svg
 ├── src/
@@ -83,7 +84,8 @@ Navigate to http://localhost:5173
 ├── package.json
 ├── tailwind.config.js
 ├── vite.config.js
-└── README.md```
+└── README.md
+```
 
 ##🔧 Configuration
 Environment Variables
