@@ -1,7 +1,7 @@
-Business Intelligence Dashboard
+# Business Intelligence Dashboard
 A modern, interactive business dashboard built with React and Recharts, inspired by Tableau's design and functionality. This dashboard provides comprehensive data visualization and analytics capabilities for business intelligence.
-Show Image
-🚀 Features
+
+##🚀 Features
 
 Interactive KPI Cards - Real-time key performance indicators with trend analysis
 Multiple Chart Types - Line charts, bar charts, pie charts, and area charts
@@ -11,15 +11,15 @@ Real-time Updates - Refresh functionality for live data updates
 Export Capabilities - Download charts and data for reporting
 Professional UI - Clean, modern interface inspired by Tableau
 
-📊 Dashboard Components
-KPI Metrics
+##📊 Dashboard Components
+### KPI Metrics
 
 Total Revenue with growth trends
 Order volume and average order value
 Customer acquisition metrics
 Performance indicators with visual trends
 
-Visualizations
+### Visualizations
 
 Revenue Trend Analysis - Area chart showing revenue over time
 Regional Sales Distribution - Pie chart with regional breakdown
@@ -27,7 +27,7 @@ Product Performance - Multi-series bar chart comparing categories
 Order Volume Trends - Line chart tracking order patterns
 Customer Growth - Area chart showing customer acquisition
 
-Interactive Features
+### Interactive Features
 
 Region-based filtering
 Time period selection (6M, 1Y, 2Y)
@@ -35,7 +35,7 @@ Real-time data refresh
 Hover tooltips with detailed information
 Responsive chart resizing
 
-🛠 Tech Stack
+## 🛠 Tech Stack
 
 React 18 - Modern React with hooks
 Recharts - Powerful charting library for React
@@ -43,7 +43,7 @@ Tailwind CSS - Utility-first CSS framework
 Lucide React - Beautiful icon library
 Vite - Fast build tool and dev server
 
-📦 Installation
+##📦 Installation
 
 Clone the repository
 bashgit clone https://github.com/yourusername/business-dashboard.git
@@ -58,7 +58,7 @@ bashnpm run dev
 Open your browser
 Navigate to http://localhost:5173
 
-🏗 Project Structure
+### 🏗 Project Structure
 business-dashboard/
 ├── public/
 │   └── vite.svg
@@ -84,7 +84,7 @@ business-dashboard/
 ├── tailwind.config.js
 ├── vite.config.js
 └── README.md
-🔧 Configuration
+##🔧 Configuration
 Environment Variables
 Create a .env file in the root directory:
 envVITE_APP_TITLE=Business Intelligence Dashboard
@@ -111,7 +111,7 @@ Updating tailwind.config.js for theme customization
 Adding custom CSS in src/App.css
 Using Tailwind utility classes in components
 
-🚀 Deployment
+## 🚀 Deployment
 Vercel (Recommended)
 
 Push your code to GitHub
@@ -159,19 +159,10 @@ Supabase - PostgreSQL with real-time subscriptions
 Firebase - NoSQL database with real-time updates
 GraphQL - Flexible query layer for complex data needs
 
-🤝 Contributing
+## 🤝 Contributing
 
 Fork the repository
 Create a feature branch: git checkout -b feature/new-feature
 Commit your changes: git commit -am 'Add new feature'
 Push to the branch: git push origin feature/new-feature
 Submit a pull request
-
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-🙏 Acknowledgments
-
-Inspired by Tableau's dashboard design
-Built with the amazing React and Recharts communities
-Icons provided by Lucide React
-Styling powered by Tailwind CSS
